@@ -1,0 +1,9 @@
+.container{
+  /* margin: auto; */
+  /* width: 80%; */
+  background: #222222;
+}
+
+.custom-align{
+  align-items: baseline;
+}
