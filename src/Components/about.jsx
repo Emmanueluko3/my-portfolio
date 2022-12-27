@@ -13,7 +13,7 @@ function About() {
                     </div>
                     <p className="grid justify-items-center lg:text-center lg:px-8 py-5 lg:text-[25px] w-full">
                     {/* <span className="text-customPink">Better design, better experiences</span>  */}
-                    I'm a Front-End Developer based in Akwa Ibom, Nigeria who loves clean, simple & unique design. I love creating designs that are appealing practical and ideal for the client and the users. I am currently learning Python and have a keen interest in Web3, Blockchain and NFT market that are slowly forging the future of the internet.
+                    I'm a Front-End Developer based in Akwa Ibom, Nigeria who loves clean, simple & unique web applications. I love creating websites that are appealing practical and ideal for the client and the users. I am currently learning nodeJs and have a keen interest in Web3, Blockchain and NFT market that are slowly forging the future of the internet.
                     </p>
                 </div>
             </div>
