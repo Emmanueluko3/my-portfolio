@@ -17,18 +17,18 @@ function Services() {
             title: 'QA/QC Test'
         },
     ];
-    const imgClasses = "w-[27%] grid justify-items-center py-3 content-between bg-white border-white border-8 rounded-lg drop-shadow-2xl";
+    const imgClasses = "lg:w-[27%] w-[48%] grid justify-items-center py-3 lg:content-between bg-white border-white border-8 rounded-lg drop-shadow-2xl";
     const service = services.map((item, key) =>(
         <div key={key} className={imgClasses}>
-            <img src={item.avatar} className="h-[80px]" alt="" />
-            <h3 className="text-customPink text-[27px] text-center font-semibold">{item.title}</h3>
+            <img src={item.avatar} className="lg:h-[80px] h-[40%]" alt="" />
+            <h3 className="text-customPink lg:text-[27px] text-center font-semibold">{item.title}</h3>
         </div>
     ));
     return ( 
         <>
-            <div id="services" className="grid justify-items-center bg-gray-700 px-10 text-white py-10">
-                <h2 className="py-10 font-bold text-5xl mb-5">Services</h2>                    
-                <div className="flex justify-center space-x-12 py-8 w-full h-full ">
+            <div id="services" className="container grid justify-items-center bg-gray-700 lg:px-10 text-white py-5 lg:py-10">
+                <h2 className="py-10 font-bold lg:text-5xl text-3xl lg:mb-5">Services</h2>                    
+                <div className="flex justify-center flex-wrap space-x-2 lg:space-x-12 lg:py-8 w-full h-full ">
                 {   service}
                 </div>
                     

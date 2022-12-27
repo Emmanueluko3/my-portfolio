@@ -61,14 +61,14 @@ const callouts = [
   
   export default function Projects() {
     return (
-      <div className="bg-gray-700" id="projects">
+      <div className="container bg-gray-700" id="projects">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-2xl py-16 sm:py-24 lg:max-w-none lg:py-32">
             <h2 className="text-5xl text-center font-bold text-white">Projects</h2>
   
             <div className="mt-6 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0">
-              {callouts.map((callout) => (
-                <div key={callout.name} className="group relative py-3">
+              {callouts.map((callout, key) => (
+                <div key={key} className="group relative py-3">
                   <div className="relative h-80  w-full overflow-hidden rounded-lg bg-white group-hover:opacity-75 sm:aspect-w-2 sm:aspect-h-1 sm:h-60 lg:aspect-w-3 lg:aspect-h-1">
                     <img
                       src={callout.imageSrc}
