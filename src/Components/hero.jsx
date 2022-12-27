@@ -8,6 +8,7 @@ import Facebook from "../Images/facebook.svg"
 import Instagram from "../Images/instagram.svg"
 import Js from "../Images/js.png"
 import ReactJs from "../Images/React-js.png"
+import NextJs from "../Images/Nextjs.png"
 import VueJs from "../Images/Vuejs.png"
 import TailwindCSS from "../Images/Tailwind_CSS_Logo.png"
 import Bootstrap from "../Images/Bootstrap_logo.png"
@@ -35,6 +36,10 @@ function Hero() {
         { 
             avatar: VueJs, 
             title: 'VueJs'
+        },
+        { 
+            avatar: NextJs, 
+            title: 'NextJs'
         },
         { 
             avatar: TailwindCSS, 
