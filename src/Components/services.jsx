@@ -17,10 +17,13 @@ function Services() {
             title: 'QA/QC Test'
         },
     ];
-    const imgClasses = "lg:w-[27%] w-[48%] grid justify-items-center py-3 lg:content-between bg-white border-white border-8 rounded-lg drop-shadow-2xl";
+    const imgClasses = "lg:w-[27%] w-[80%] grid h-auto justify-items-center py-3 my-3 lg:content-between bg-white border-white border-8 rounded-lg drop-shadow-2xl";
     const service = services.map((item, key) =>(
         <div key={key} className={imgClasses}>
-            <img src={item.avatar} className="lg:h-[80px] h-[40%]" alt="" />
+            <div className="h-38 w-20 lg:w-auto grid justify-items-center">
+                <img src={item.avatar} className="lg:h-[80px] object-center object-cover" alt="" />
+            </div>
+            
             <h3 className="text-customPink lg:text-[27px] text-center font-semibold">{item.title}</h3>
         </div>
     ));
