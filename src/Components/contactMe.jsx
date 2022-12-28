@@ -1,5 +1,12 @@
 
 export default function ContactMe() {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // setFormErrors(validate(formValues));
+    // setIsSubmit(true);
+
+}
+
   return (
     <div id="contact">
       <section className="text-white body-font relative bg-gray-700">
@@ -13,7 +20,7 @@ export default function ContactMe() {
             </p>
           </div>
           <div className="lg:w-full md:w-2/3 mx-auto lg:flex md:block justify-between items-center bg-gray-800 rounded">
-            <form className="flex flex-wrap m-2">
+            <form action="https://formsubmit.co/emmanueluko90@gmail.com" method="POST" className="flex flex-wrap m-2">
               <div className="p-2 w-1/2">
                 <div className="relative">
                   <label htmlFor="name" className="leading-7 text-sm text-white">
@@ -59,7 +66,11 @@ export default function ContactMe() {
                 </div>
               </div>
               <div className="p-2 w-full">
-                <button className="flex mx-auto text-white bg-customPink border-0 py-2 px-8 focus:outline-none hover:opacity-75 rounded text-lg">
+                <button 
+                  // onClick={handleSubmit} 
+                  type="submit" 
+                  className="flex mx-auto text-white bg-customPink border-0 py-2 px-8 focus:outline-none hover:opacity-75 rounded text-lg"
+                >
                   Send
                 </button>
               </div>
